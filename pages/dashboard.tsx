@@ -43,6 +43,7 @@ export default function Dashboard({ rooms }: { rooms: Room[] }) {
         )}
         {rooms.map((room) => (
           <RoomGeneration
+          key={room.id}
             original={room.inputImage}
             generated={room.outputImage}
           />

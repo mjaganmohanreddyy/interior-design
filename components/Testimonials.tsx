@@ -100,7 +100,7 @@ export function Testimonials() {
                       <figure className="relative rounded-2xl bg-gray-600 p-6 shadow-xl shadow-slate-900/10">
                         <blockquote className="relative">
                           <p className="text-lg tracking-tight text-white">
-                            "{testimonial.content}"
+                          &quot;{testimonial.content}&quot;
                           </p>
                         </blockquote>
                         <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
