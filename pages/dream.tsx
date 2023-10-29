@@ -136,7 +136,6 @@ const Home: NextPage = () => {
       <Head>
         <title>interior design</title>
       </Head>
-      <Header />
       {/* <div className="flex justify-between items-center space-x-2 gap-5"> */}
 
 
