@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { UploadDropzone } from "react-uploader";
 import { Uploader } from "uploader";
 import { CompareSlider } from "../components/CompareSlider";
@@ -16,12 +16,19 @@ import downloadPhoto from "../utils/downloadPhoto";
 import DropDown from "../components/DropDown";
 import { roomType, rooms, themeType, themes } from "../utils/dropdownTypes";
 import { GenerateResponseData } from "./api/generate";
-import { useSession, signIn } from "next-auth/react";
+import {  signIn } from "next-auth/react";
 import useSWR from "swr";
 import { Rings } from "react-loader-spinner";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Toaster, toast } from "react-hot-toast";
+import { Menu, Dialog, Transition } from "@headlessui/react";
+import ChevronUp from "@/components/shared/icons/chevron-up";
+import { Fragment, useEffect, useState } from "react";
+import { signOut, useSession } from "next-auth/react";
+import { ModeToggle } from "@/components/theme-toggle";
+import MenuIcon from "@/components/shared/icons/menu";
+import X from "@/components/shared/icons/x";
 
 // Configuration for the uploader
 const uploader = Uploader({
@@ -40,6 +47,7 @@ const Home: NextPage = () => {
   const [photoName, setPhotoName] = useState<string | null>(null);
   const [theme, setTheme] = useState<themeType>("Modern");
   const [room, setRoom] = useState<roomType>("Living Room");
+  const [sidebarOpen, setSidebarOpen] = useState<boolean>(false);
 
   const fetcher = (url: string) => fetch(url).then((res) => res.json());
   const { data, mutate } = useSWR("/api/remaining", fetcher);
@@ -124,43 +132,47 @@ const Home: NextPage = () => {
   }, [router.query.success]);
 
   return (
-    <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
+    <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen bg-white">
       <Head>
-        <title>RoomGPT</title>
+        <title>interior design</title>
       </Head>
-      <Header
-        photo={session?.user?.image || undefined}
-        email={session?.user?.email || undefined}
-      />
-      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-4 sm:mb-0 mb-8">
+      <Header />
+      {/* <div className="flex justify-between items-center space-x-2 gap-5"> */}
+
+
+
+      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-4 sm:mb-0 mb-8 bg-white">
         {status === "authenticated" ? (
           <Link
             href="/buy-credits"
             className="border border-gray-700 rounded-2xl py-2 px-4 text-gray-400 text-sm my-6 duration-300 ease-in-out hover:text-gray-300 hover:scale-105 transition"
           >
             Pricing is now available.{" "}
-            <span className="font-semibold text-gray-200">Click here</span> to
+            <span className="font-semibold  text-black">Click here</span> to
             buy credits!
           </Link>
         ) : (
           <a
-            href="https://twitter.com/nutlope/status/1635674124738523139?cxt=HHwWhsCz1ei8irMtAAAA"
+            href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
             className="border border-gray-700 rounded-2xl py-2 px-4 text-gray-400 text-sm my-6 duration-300 ease-in-out hover:text-gray-300 transition"
           >
             Over{" "}
-            <span className="font-semibold text-gray-200">1 million users</span>{" "}
-            have used roomGPT so far
+            <span className="font-semibold text-gray-500">1000 users</span>{" "}
+            have used interior design so far
           </a>
         )}
-        <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-100 sm:text-6xl mb-5">
-          Generate your <span className="text-blue-600">dream</span> room
+        <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal sm:text-6xl mb-5">
+        Discover the Future of { ' '}
+            <span className="text-blue-600">Interior </span> Design
         </h1>
+
+        <p> To get started, simply upload a photo of your space and select the room type and style. interior design will then generate a realistic rendering of your room.</p>
         {status === "authenticated" && data && !restoredImage && (
-          <p className="text-gray-400">
+          <p className=" text-black">
             You have{" "}
-            <span className="font-semibold text-gray-300">
+            <span className="font-semibold  text-orange-700">
               {data.remainingGenerations}{" "}
               {data?.remainingGenerations > 1 ? "credits" : "credit"}
             </span>{" "}
@@ -276,7 +288,7 @@ const Home: NextPage = () => {
               ) : (
                 !originalPhoto && (
                   <div className="h-[250px] flex flex-col items-center space-y-6 max-w-[670px] -mt-8">
-                    <div className="max-w-xl text-gray-300">
+                    <div className="max-w-xl text-gray-800">
                       Sign in below with Google to create a free account and
                       redesign your room today. You will get 3 generations for
                       free.
@@ -388,8 +400,9 @@ const Home: NextPage = () => {
         </ResizablePanel>
         <Toaster position="top-center" reverseOrder={false} />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
+    // </div>
   );
 };
 

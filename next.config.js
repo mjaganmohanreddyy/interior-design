@@ -1,10 +1,17 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["upcdn.io", "replicate.delivery", "lh3.googleusercontent.com"],
+    domains: ["upcdn.io", "pbxt.replicate.delivery", "lh3.googleusercontent.com"],
   },
-
-}
-
-module.exports = nextConfig
+  async redirects() {
+    return [
+      {
+        source: "/github",
+        destination: "https://github.com",
+        permanent: false,
+      },
+     
+    ];
+  },
+};

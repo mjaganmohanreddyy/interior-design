@@ -2,7 +2,8 @@ import Head from "next/head";
 import Header from "../components/Header";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
+
 import prisma from "../lib/prismadb";
 import { Room } from "@prisma/client";
 import { RoomGeneration } from "../components/RoomGenerator";
@@ -15,14 +16,11 @@ export default function Dashboard({ rooms }: { rooms: Room[] }) {
   return (
     <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
-        <title>RoomGPT Dashboard</title>
+        <title>interior design Dashboard</title>
       </Head>
-      <Header
-        photo={session?.user?.image || undefined}
-        email={session?.user?.email || undefined}
-      />
-      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mb-0 mb-8">
-        <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-100 sm:text-6xl mb-5">
+      <Header/>
+      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mb-0 mb-8 bg-white">
+        <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold  text-black tracking-normal  sm:text-6xl mb-5">
           View your <span className="text-blue-600">room</span> generations
         </h1>
         {rooms.length === 0 ? (
@@ -36,9 +34,9 @@ export default function Dashboard({ rooms }: { rooms: Room[] }) {
             </Link>
           </p>
         ) : (
-          <p className="text-gray-300">
+          <p className="text-gray-800">
             Browse through your previous room generations below. Any feedback?
-            Email hassan@roomgpt.io
+            Email interiordesigns.gmail.com
           </p>
         )}
         {rooms.map((room) => (
@@ -49,7 +47,7 @@ export default function Dashboard({ rooms }: { rooms: Room[] }) {
           />
         ))}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
