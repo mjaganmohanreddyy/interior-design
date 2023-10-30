@@ -29,7 +29,7 @@ export default function Pricing() {
         </div>
         <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-500 mb-10">
           You currently have{" "}
-          <span className="font-semibold text-gray-400">
+          <span className="font-semibold text-gray-500">
             {data?.remainingGenerations}{" "}
             {data?.remainingGenerations > 1 ? "credits" : "credit"}
           </span>
