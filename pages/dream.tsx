@@ -143,12 +143,11 @@ const Home: NextPage = () => {
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-4 sm:mb-0 mb-8 bg-white">
         {status === "authenticated" ? (
           <Link
-            href="/buy-credits"
+            href="/dashboard"
             className="border border-gray-700 rounded-2xl py-2 px-4 text-gray-400 text-sm my-6 duration-300 ease-in-out hover:text-gray-300 hover:scale-105 transition"
           >
-            Pricing is now available.{" "}
-            <span className="font-semibold  text-black">Click here</span> to
-            buy credits!
+            <span className="font-semibold  text-black">Dashboard</span>
+            
           </Link>
         ) : (
           <a
@@ -163,10 +162,9 @@ const Home: NextPage = () => {
           </a>
         )}
         <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal sm:text-6xl mb-5">
-        Discover the Future of { ' '}
-            <span className="text-blue-600">Interior </span> Design
+        Transform your room with { ' '}
+            <span className="text-blue-600">Artificial Intelligence.</span>
         </h1>
-
         <p> To get started, simply upload a photo of your space and select the room type and style. interior design will then generate a realistic rendering of your room.</p>
         {status === "authenticated" && data && !restoredImage && (
           <p className=" text-black">
@@ -181,7 +179,7 @@ const Home: NextPage = () => {
                 Buy more credits{" "}
                 <Link
                   href="/buy-credits"
-                  className="font-semibold text-gray-300 underline underline-offset-2 hover:text-gray-200 transition"
+                  className="font-semibold text-gray-900 underline underline-offset-2 hover:text-blue-500 transition"
                 >
                   here
                 </Link>

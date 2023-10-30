@@ -2,60 +2,59 @@
 
 const testimonials = [
   {
-    body: "best thing is that all the save DocSend to PDF plugins that VCs use probably won't work 😁",
+    body: "damn cool tool! you don't need an interior designer anymore",
     author: {
-      name: "Jonathan Reimer",
-      handle: "jonathimer",
-      imageUrl:
-        "https://pbs.twimg.com/profile_images/1485560739679068161/lfB1bBo1_400x400.jpg",
-      link: "https://twitter.com/jonathimer/status/1663651278872891395",
+      name: "prathibha",
+      handle: "prathibha",
+
+      link: "https://twitter.com/",
     },
   },
   {
-    body: "This looks awesome!! Incredible work for an MVP – love how the link was automatically copied to clipboard when it's created! 🤩",
+    body: "you can now see your rooms in different themes before you renovate. how cool is that!",
     author: {
-      name: "Steven Tey",
-      handle: "steventey",
+      name: "david ho",
+      handle: "david ho",
       imageUrl:
         "https://pbs.twimg.com/profile_images/1506792347840888834/dS-r50Je_400x400.jpg",
       link: "https://twitter.com/steventey/status/1663611851807006721",
     },
   },
   {
-    body: "looks so good! gonna have to steal that upload component 😍 congrats & thanks for the great idea 😄",
+    body: "looks so good! and thanks for the great idea 😄",
     author: {
-      name: "alana goyal",
-      handle: "alanaagoyal",
+      name: "jack ross",
+      handle: "jack ross",
       imageUrl:
         "https://pbs.twimg.com/profile_images/1679538379070005248/jwGUle5U_400x400.jpg",
       link: "https://twitter.com/alanaagoyal/status/1663522718015270912",
     },
   },
   {
-    body: "Currently getting a lot of use out of .@mfts0's \"papermark\" project! I'm looking to see how he implemented Resend/React Email into his NextAuth stack.",
+    body: "this is the best ai tool i've seen so far",
     author: {
-      name: "Lukas Lunzmann",
-      handle: "lucaslunzmann",
+      name: "srinivas",
+      handle: "srinivas",
       imageUrl:
         "https://pbs.twimg.com/profile_images/1589657534264213504/d0tljS03_400x400.jpg",
       link: "https://twitter.com/lucaslunzmann/status/1673052992541523968",
     },
   },
   {
-    body: "😍 Papermark just became 10x more valuable with analytics on each page of Pitchdeck. ",
+    body: "Something that helped me so much  get over my indecisiveness when decorating my house. ",
     author: {
-      name: "Iuliia Shnai",
-      handle: "shnai0",
+      name: "shreya",
+      handle: "shreya",
       imageUrl:
         "https://pbs.twimg.com/profile_images/1668749063666147328/C0NyHT9B_400x400.jpg",
       link: "https://twitter.com/shnai0/status/1676626294077812736",
     },
   },
   {
-    body: "Introducing Papermark 1.0 😃 An open-source alternative to DocSend that allows you to securely share documents.",
+    body: "just used it now- the best AI interior generator i have seen!",
     author: {
-      name: "Marc Seitz",
-      handle: "mfts0",
+      name: "wei vu",
+      handle: "wei vu",
       imageUrl:
         "https://pbs.twimg.com/profile_images/1176854646343852032/iYnUXJ-m_400x400.jpg",
       link: "https://twitter.com/mfts0/status/1663521261396320257",
@@ -70,7 +69,7 @@ export default function Testimonials() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-xl text-center">
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            1000 people love Papermark, or just use it.
+             so far 127 people love interior design, or just use it.
           </p>
         </div>
         <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
@@ -95,11 +94,6 @@ export default function Testimonials() {
                     <p>{`${testimonial.body}`}</p>
                   </blockquote>
                   <figcaption className="mt-6 flex items-center gap-x-4">
-                    <img
-                      className="h-10 w-10 rounded-full bg-gray-50"
-                      src={testimonial.author.imageUrl}
-                      alt=""
-                    />
                     <div>
                       <div className="font-semibold text-gray-900">
                         {testimonial.author.name}

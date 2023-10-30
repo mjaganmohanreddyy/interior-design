@@ -7,7 +7,7 @@ export default function Section() {
               <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
                 <img
                   className="absolute inset-0 h-full w-full object-cover  "
-                  src="https://www.papermark.io/_static/michael.webp"
+                  src="/gen1.jpg"
                   alt=""
                 />
   
@@ -24,26 +24,35 @@ export default function Section() {
                   >
                     <use href="#0ef284b8-28c2-426e-9442-8655d393522e" x={86} />
                   </svg>
-  
-                  <blockquote className="mt-6 text-xl font-semibold leading-none text-white ">
-                    <p className="m-0 py-1">
-                      “ I will make them remember me, I will ”
-                    </p>
-                  </blockquote>
-  
-                  <figcaption className="mt-6 text-sm leading-6 text-gray-300">
-                    <strong className="font-semibold text-white">Michael</strong>{" "}
-                    founder
-                  </figcaption>
+
                 </figure>
               </div>
             </div>
+            <div className=" relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+                <img
+                  className="absolute inset-0 h-full w-full object-cover  "
+                  src="/sample-2.png"
+                  alt=""
+                />
+                </div>
+
+                <div className=" relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+                <img
+                  className="absolute inset-0 h-full w-full object-cover  "
+                  src="/sample-10.png"
+                  alt=""
+                />
+                </div>
             <div>
               <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
-                <h1 className="mt-5 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  Send via Papermark = Share your personality
-                </h1>
-                <ul role="list" className="mt-8 space-y-2 text-gray-600">
+                <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+                <img
+                  className="absolute inset-0 h-full w-full object-cover  "
+                  src="/sample-9.png"
+                  alt=""
+                />
+                </div>
+                {/* <ul role="list" className="mt-8 space-y-2 text-gray-600">
                   <li className="flex gap-x-3">
                     <span>
                       <strong className="font-semibold text-gray-900">
@@ -85,7 +94,12 @@ export default function Section() {
                       You can use it for free
                     </span>
                   </li>
-                </ul>
+                </ul> */}
+                    {/* <img
+                  className="absolute inset-0 h-full w-full object-cover  "
+                  src="/gen1.jpg"
+                  alt=""
+                /> */}
               </div>
             </div>
           </div>

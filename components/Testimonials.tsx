@@ -1,136 +1,117 @@
-import Image from "next/image";
 
 const testimonials = [
-  [
-    {
-      content: "So good! I need this right now. Congrats on the launch!",
-      link: "https://twitter.com/eveporcello/status/1631438728999899136",
-      author: {
-        name: "Eve Porcello",
-        role: "Engineer & Author",
-        image: "/eve.jpg",
-      },
+  {
+    body: "best thing is that all the save DocSend to PDF plugins that VCs use probably won't work 😁",
+    author: {
+      name: "Jonathan Reimer",
+      handle: "jonathimer",
+      imageUrl:
+        "https://pbs.twimg.com/profile_images/1485560739679068161/lfB1bBo1_400x400.jpg",
+      link: "https://twitter.com/jonathimer/status/1663651278872891395",
     },
-
-    {
-      content:
-        "Finally! Something to help me get over my indecisiveness when decorating my house!",
-      link: "https://twitter.com/arthur_dvorkin/status/1631402865209274369",
-      author: {
-        name: "Arthur Dvorkin",
-        role: "Engineer",
-        image: "/arthur.jpg",
-      },
+  },
+  {
+    body: "This looks awesome!! Incredible work for an MVP – love how the link was automatically copied to clipboard when it's created! 🤩",
+    author: {
+      name: "Steven Tey",
+      handle: "steventey",
+      imageUrl:
+        "https://pbs.twimg.com/profile_images/1506792347840888834/dS-r50Je_400x400.jpg",
+      link: "https://twitter.com/steventey/status/1663611851807006721",
     },
-  ],
-  [
-    {
-      content:
-        "This is incredible, you don't need an interior designer anymore.",
-      link: "https://www.tiktok.com/@thenubians/video/7206088336044313861?q=roomgpt.io&t=1677909079689",
-      author: {
-        name: "Ade Dada",
-        role: "Startup Founder",
-        image: "/ade.jpeg",
-      },
+  },
+  {
+    body: "looks so good! gonna have to steal that upload component 😍 congrats & thanks for the great idea 😄",
+    author: {
+      name: "alana goyal",
+      handle: "alanaagoyal",
+      imageUrl:
+        "https://pbs.twimg.com/profile_images/1679538379070005248/jwGUle5U_400x400.jpg",
+      link: "https://twitter.com/alanaagoyal/status/1663522718015270912",
     },
-    {
-      content:
-        "I haven't changed my room layout for 5 years, but this app may change that. Great job.",
-      link: "https://twitter.com/RobAttfield/status/1631545265281974273",
-      author: {
-        name: "Rob Attfield",
-        role: "Software Engineer",
-        image: "/rob.jpg",
-      },
+  },
+  {
+    body: "Currently getting a lot of use out of .@mfts0's \"papermark\" project! I'm looking to see how he implemented Resend/React Email into his NextAuth stack.",
+    author: {
+      name: "Lukas Lunzmann",
+      handle: "lucaslunzmann",
+      imageUrl:
+        "https://pbs.twimg.com/profile_images/1589657534264213504/d0tljS03_400x400.jpg",
+      link: "https://twitter.com/lucaslunzmann/status/1673052992541523968",
     },
-  ],
-  [
-    {
-      content:
-        "This is fantastic. I've already decided on a new wall color from a generated image and repainting it is now my weekend project.",
-      link: "https://twitter.com/Music4UsAll/status/1631622608595607552",
-      author: {
-        name: "Music",
-        role: "Some dude on the internet",
-        image: "/music.jpg",
-      },
+  },
+  {
+    body: "😍 Papermark just became 10x more valuable with analytics on each page of Pitchdeck. ",
+    author: {
+      name: "Iuliia Shnai",
+      handle: "shnai0",
+      imageUrl:
+        "https://pbs.twimg.com/profile_images/1668749063666147328/C0NyHT9B_400x400.jpg",
+      link: "https://twitter.com/shnai0/status/1676626294077812736",
     },
-    {
-      content: "🤯",
-      link: "https://twitter.com/github/status/1631821360619028482",
-      author: {
-        name: "GitHub",
-        role: "The one and only",
-        image: "/github.jpg",
-      },
+  },
+  {
+    body: "Introducing Papermark 1.0 😃 An open-source alternative to DocSend that allows you to securely share documents.",
+    author: {
+      name: "Marc Seitz",
+      handle: "mfts0",
+      imageUrl:
+        "https://pbs.twimg.com/profile_images/1176854646343852032/iYnUXJ-m_400x400.jpg",
+      link: "https://twitter.com/mfts0/status/1663521261396320257",
     },
-  ],
+  },
+  // More testimonials...
 ];
 
-export function Testimonials() {
+export default function Testimonials() {
   return (
-    <section
-      id="testimonials"
-      aria-label="What our customers are saying"
-      className="py-10"
-    >
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 md:px-7">
-        <div className="mx-auto md:text-center">
-          <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-gray-300 sm:text-6xl">
-            Loved by many worldwide.
-          </h1>
-          <p className="mx-auto mt-6 max-w-xl text-lg sm:text-gray-400  text-gray-500 leading-7">
-            See what our over 1 million users are saying about the product.
+    <div className="bg-white py-24 sm:py-32">
+      <h2> hello world</h2>
+      {/* <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-xl text-center">
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          Find Your Perfect Match Among 30+ Styles
           </p>
+          <p className=" text-black"> AI's Broad Range of Styles Tailors the Design Experience to Your Aesthetic</p>
         </div>
-        <ul
-          role="list"
-          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-16 lg:max-w-none lg:grid-cols-3"
-        >
-          {testimonials.map((column, columnIndex) => (
-            <li key={columnIndex}>
-              <ul role="list" className="flex flex-col gap-y-6 sm:gap-y-8">
-                {column.map((testimonial, testimonialIndex) => (
-                  <li
-                    key={testimonialIndex}
-                    className="hover:scale-105 transition duration-300 ease-in-out "
-                  >
-                    <a href={testimonial.link} target="_blank" rel="noreferrer">
-                      <figure className="relative rounded-2xl bg-gray-600 p-6 shadow-xl shadow-slate-900/10">
-                        <blockquote className="relative">
-                          <p className="text-lg tracking-tight text-white">
-                          &quot;{testimonial.content}&quot;
-                          </p>
-                        </blockquote>
-                        <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
-                          <div>
-                            <div className="font-display text-base text-white">
-                              {testimonial.author.name}
-                            </div>
-                            <div className="mt-1 text-sm text-gray-400">
-                              {testimonial.author.role}
-                            </div>
-                          </div>
-                          <div className="overflow-hidden rounded-full bg-slate-50">
-                            <Image
-                              className="h-14 w-14 object-cover"
-                              src={testimonial.author.image}
-                              alt="picture of the testimonial author"
-                              width={56}
-                              height={56}
-                            />
-                          </div>
-                        </figcaption>
-                      </figure>
+        <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
+          <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
+            {testimonials.map((testimonial) => (
+              <div
+                key={testimonial.author.handle}
+                className="pt-8 sm:inline-block sm:w-full sm:px-4 relative"
+              >
+                <figure className="rounded-2xl bg-white p-10 text-sm leading-6 border border-gray-300 relative">
+                  {testimonial.author.link && ( // Conditional rendering based on the presence of link
+                    <a
+                      href={testimonial.author.link} // Using the link from the testimonial
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="absolute top-4 right-4 z-10"
+                    >
                     </a>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
+                  )}
+                  <blockquote className="text-gray-900">
+                    <p>{`${testimonial.body}`}</p>
+                  </blockquote>
+                  <figcaption className="mt-6 flex items-center gap-x-4">
+                    <img
+                      className="h-10 w-10 rounded-full bg-gray-50"
+                      src={testimonial.author.imageUrl}
+                      alt=""
+                    />
+                    <div>
+                      <div className="font-semibold text-gray-900">
+                        {testimonial.author.imageUrl}
+                      </div>
+                      <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            ))}
+          </div>
+        </div> */}
       </div>
-    </section>
   );
 }

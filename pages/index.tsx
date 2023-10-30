@@ -40,11 +40,11 @@ const Home: NextPage = () => {
 
         <Header />
         <Logos />
-        <Decks />
-        {/* <Section />
-        <Section3 />
+        <Decks /> 
+        <Section />
+        {/* <Section3 /> */}
         <Testimonials />
-        <Section2 /> */}
+        <Section2 /> 
       </div>
     </div>
     <Footer />
