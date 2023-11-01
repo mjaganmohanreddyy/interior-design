@@ -31,7 +31,7 @@ const navigation = {
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             {/* Text-based Logo */}
             <h1 className="text-2xl font-bold tracking-tighter text-black dark:text-white">
-              interior design
+            interiorai
             </h1>
   
             <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
@@ -118,7 +118,7 @@ const navigation = {
             </div>
             <div className="mt-4 ">
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                © 2023 interior design. All rights reserved.
+                © 2023 interiorai.online All rights reserved.
               </p>
             </div>
           </div>

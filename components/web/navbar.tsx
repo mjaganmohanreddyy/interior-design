@@ -18,7 +18,7 @@ export default function Navbar() {
               <div className="flex flex-shrink-0 items-center">
                 <Link href="/">
                   <span className="text-xl font-bold tracking-tighter text-black">
-                    interior design
+                    interiorai.online
                   </span>
                 </Link>
               </div>
