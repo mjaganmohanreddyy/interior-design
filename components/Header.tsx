@@ -66,7 +66,7 @@ export default function Header() {
                                  href="mailto:support@papermark.io"
                                  className="underline hover:text-muted-foreground/80"
                                >
-                                 support@interior.io
+                                 support@interiorai.online
                                </a>
                              </p>
                            </Menu.Item>
