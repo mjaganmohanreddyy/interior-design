@@ -168,7 +168,7 @@ const Home: NextPage = () => {
        
         {status === "authenticated" && data && !restoredImage && (
          <>
-           <p className=" text-black"> To get started, simply upload a photo of your space and select the room type and style. interior design will then generate a realistic rendering of your room.</p>
+           <p className=" text-black"> To get started, simply upload a photo of your space and select the room type and theme. interiorai will then generate a realistic rendering of your room.</p>
           <p className=" text-black">
             You have{" "}
             <span className="font-semibold  text-orange-700">
