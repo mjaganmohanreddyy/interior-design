@@ -165,7 +165,7 @@ const Home: NextPage = () => {
         Transform your room with { ' '}
             <span className="text-blue-600">Artificial Intelligence.</span>
         </h1>
-        <p> To get started, simply upload a photo of your space and select the room type and style. interior design will then generate a realistic rendering of your room.</p>
+        {/* <p> To get started, simply upload a photo of your space and select the room type and style. interior design will then generate a realistic rendering of your room.</p> */}
         {status === "authenticated" && data && !restoredImage && (
           <p className=" text-black">
             You have{" "}
