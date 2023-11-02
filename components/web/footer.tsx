@@ -57,9 +57,9 @@ const navigation = {
                   </ul>
                 </div>
                 <div className="mt-10 md:mt-0">
-                  <h3 className="text-sm font-semibold leading-6 text-black dark:text-white">
+                  {/* <h3 className="text-sm font-semibold leading-6 text-black dark:text-white">
                     Legal
-                  </h3>
+                  </h3> */}
                   <ul role="list" className="mt-6 space-y-4">
                     {navigation.legal.map((item) => (
                       <li key={item.name}>
@@ -78,9 +78,9 @@ const navigation = {
               </div>
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
-                  <h3 className="text-sm font-semibold leading-6 text-black dark:text-white">
+                  {/* <h3 className="text-sm font-semibold leading-6 text-black dark:text-white">
                     Tools
-                  </h3>
+                  </h3> */}
                   {/* <ul role="list" className="mt-6 space-y-4">
                     {navigation.tools.map((item) => (
                       <li key={item.name}>
@@ -97,9 +97,9 @@ const navigation = {
                   </ul> */}
                 </div>
                 <div className="mt-10 md:mt-0">
-                  <h3 className="text-sm font-semibold leading-6 text-black dark:text-white">
+                  {/* <h3 className="text-sm font-semibold leading-6 text-black dark:text-white">
                     Alternatives
-                  </h3>
+                  </h3> */}
                   {/* <ul role="list" className="mt-6 space-y-4">
                     {navigation.alternatives.map((item) => (
                       <li key={item.name}>
