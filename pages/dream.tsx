@@ -165,8 +165,10 @@ const Home: NextPage = () => {
         Transform Your Interior Design with{ ' '}
             <span className=" hover:text-orange-700">AI</span>
         </h1>
-        {/* <p> To get started, simply upload a photo of your space and select the room type and style. interior design will then generate a realistic rendering of your room.</p> */}
+       
         {status === "authenticated" && data && !restoredImage && (
+         <>
+           <p className=" text-black"> To get started, simply upload a photo of your space and select the room type and style. interior design will then generate a realistic rendering of your room.</p>
           <p className=" text-black">
             You have{" "}
             <span className="font-semibold  text-orange-700">
@@ -187,6 +189,7 @@ const Home: NextPage = () => {
               </span>
             )}
           </p>
+          </>
         )}
         <ResizablePanel>
           <AnimatePresence mode="wait">
