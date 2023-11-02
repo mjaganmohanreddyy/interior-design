@@ -161,7 +161,7 @@ const Home: NextPage = () => {
             have used interiorai so far
           </a>
         )}
-        <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal sm:text-6xl mb-5 text-orange-700">
+        <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal sm:text-6xl mb-5">
         Transform Your Interior Design with{ ' '}
             <span className=" text-slate-800 hover:text-orange-700">AI</span>
         </h1>
