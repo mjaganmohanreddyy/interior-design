@@ -3,7 +3,7 @@ const navigation = {
       { name: "Twitter", href: "https://twitter.com/_rajashekarks" },
       {name:"pricing", href:"https://www.interiorai.online/buy-credits"}
     ],
-    legal: [{ name: "Privacy", href: "/privacy" }],
+    // legal: [{ name: "Privacy", href: "/privacy" }],
     // tools: [
     //   { name: "VC-generator", href: "https://vc.papermark.io" },
     //   { name: "Open Source Friends", href: "/oss-friends" },
@@ -60,7 +60,7 @@ const navigation = {
                   {/* <h3 className="text-sm font-semibold leading-6 text-black dark:text-white">
                     Legal
                   </h3> */}
-                  <ul role="list" className="mt-6 space-y-4">
+                  {/* <ul role="list" className="mt-6 space-y-4">
                     {navigation.legal.map((item) => (
                       <li key={item.name}>
                         <a
@@ -73,7 +73,7 @@ const navigation = {
                         </a>
                       </li>
                     ))}
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
               <div className="md:grid md:grid-cols-2 md:gap-8">
