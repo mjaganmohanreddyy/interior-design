@@ -36,12 +36,14 @@ export default function Pricing() {
           . Purchase more below.
         </p>
       </main>
+      {/* prctbl_1O8154SBqFQm7EzRAoqUTpGz
+      pk_live_51Ncj1WSBqFQm7EzRq9WZhmeYxkSKQ2IatSZcobjhEhrGslWboafEbGpKWSNoTENQoCCNXGeRdYh2TPKcqIbIgoc700pMNNuoOX */}
       <div className="w-full">
         {session?.user?.email && (
           // @ts-ignore
           <stripe-pricing-table
-            pricing-table-id="prctbl_1O7ZhMSBqFQm7EzRAU6GuY3n"
-            publishable-key="pk_live_51Ncj1WSBqFQm7EzRq9WZhmeYxkSKQ2IatSZcobjhEhrGslWboafEbGpKWSNoTENQoCCNXGeRdYh2TPKcqIbIgoc700pMNNuoOX"
+            pricing-table-id="prctbl_1O826lSBqFQm7EzRWkoxUaRy"
+            publishable-key="pk_test_51Ncj1WSBqFQm7EzRWmeiPDiQGRNZPjhESPl34bDv9qLum0sidgykOpnZk2R9i2xCOwdhIQPOrpoU9Hh34VtcUkJv00xhutgAXb"
             client-reference-id={session.user.email}
             customer-email={session.user.email}
           />
