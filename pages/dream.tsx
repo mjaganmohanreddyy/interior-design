@@ -233,7 +233,7 @@ const Home: NextPage = () => {
               ) : status === "authenticated" && !originalPhoto ? (
                 <>
                   <div className="space-y-4 w-full max-w-sm">
-                    <div className="flex mt-3 items-center space-x-3 ">
+                    <div className="flex mt-3 items-center space-x-3 bg-black ">
                       <Image
                         src="/number-1-white.svg"
                         width={30}
@@ -252,7 +252,7 @@ const Home: NextPage = () => {
                     />
                   </div>
                   <div className="space-y-4 w-full max-w-sm">
-                    <div className="flex mt-10 items-center space-x-3">
+                    <div className="flex mt-10 items-center space-x-3 bg-black">
                       <Image
                         src="/number-2-white.svg"
                         width={30}
