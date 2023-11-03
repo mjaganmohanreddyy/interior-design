@@ -233,14 +233,14 @@ const Home: NextPage = () => {
               ) : status === "authenticated" && !originalPhoto ? (
                 <>
                   <div className="space-y-4 w-full max-w-sm">
-                    <div className="flex mt-3 items-center space-x-3">
+                    <div className="flex mt-3 items-center space-x-3 ">
                       <Image
                         src="/number-1-white.svg"
                         width={30}
                         height={30}
                         alt="1 icon"
                       />
-                      <p className="text-left font-medium">
+                      <p className="text-left font-medium text-black">
                         Choose your Design style.
                       </p>
                     </div>
@@ -259,7 +259,7 @@ const Home: NextPage = () => {
                         height={30}
                         alt="1 icon"
                       />
-                      <p className="text-left font-medium">
+                      <p className="text-left font-medium text-black">
                         Choose your room type.
                       </p>
                     </div>
