@@ -161,9 +161,9 @@ const Home: NextPage = () => {
             have used interiorai so far
           </a>
         )}
-        <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal sm:text-6xl mb-5">
+        <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal sm:text-6xl mb-5 text-black">
         Transform Your Interior Design with{ ' '}
-            <span className=" hover:text-orange-700">AI</span>
+            <span className=" hover: text-blue-500">AI</span>
         </h1>
        
         {status === "authenticated" && data && !restoredImage && (
