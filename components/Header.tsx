@@ -49,7 +49,7 @@ export default function Header() {
                      leaveFrom="transform opacity-100 scale-100"
                      leaveTo="transform opacity-0 scale-95"
                    >
-                     <Menu.Items className="absolute left-0 z-10  w-[max-container] origin-bottom-left rounded-md bg-gray-100 text-black dark:bg-primary-foreground  focus:outline-none">
+                     <Menu.Items className="absolute left-0 z-10  w-[max-container] origin-bottom-left rounded-md bg-slate-300 text-black dark:bg-primary-foreground  focus:outline-none">
                        {session ? (
                          <>
                            <Menu.Item>
@@ -135,7 +135,7 @@ export default function Header() {
                  leaveFrom="transform opacity-100 scale-100"
                  leaveTo="transform opacity-0 scale-95"
                >
-                 <Menu.Items className="absolute right-0 z-10 mt-2.5 w-fit origin-top-right rounded-md bg-primary-foreground shadow-lg py-2 ring-1 ring-primary-foreground/5 focus:outline-none">
+                 <Menu.Items className="absolute right-0 z-10 mt-2.5 w-fit origin-top-right rounded-md bg-primary-foreground text-black shadow-lg py-2 ring-1 ring-primary-foreground/5 focus:outline-none">
                    {session ? (
                      <>
                        <Menu.Item>
@@ -150,7 +150,7 @@ export default function Header() {
                                callbackUrl: `${window.location.origin}`,
                              })
                            }
-                           className="block px-3 py-1 text-sm leading-6 text-foreground hover:bg-gray-200 hover:dark:bg-muted"
+                           className="block px-3 py-1 text-sm leading-6 text-foreground hover:bg-slate-800 hover:dark:bg-muted"
                            href={""}
                          >
                            Sign Out
