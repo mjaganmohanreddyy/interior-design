@@ -6,7 +6,6 @@ import { Fragment, useEffect, useState } from "react";
 import { signOut, useSession } from "next-auth/react";
 import { ModeToggle } from "@/components/theme-toggle";
 import MenuIcon from "@/components/shared/icons/menu";
-import X from "@/components/shared/icons/x";
 
 
 export default function Header() {
@@ -49,7 +48,7 @@ export default function Header() {
                      leaveFrom="transform opacity-100 scale-100"
                      leaveTo="transform opacity-0 scale-95"
                    >
-                     <Menu.Items className="absolute left-0 z-10  w-[max-container] origin-bottom-left rounded-md bg-slate-300 text-black dark:bg-primary-foreground  focus:outline-none">
+                     <Menu.Items className="absolute left-0 z-10  w-[max-container] origin-bottom-left rounded-md text-black dark:bg-primary-foreground  focus:outline-none">
                        {session ? (
                          <>
                            <Menu.Item>
