@@ -71,8 +71,8 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
         case 50000:
           creditAmount = 250;
           break;
-        case 7000:
-        case 10000:
+        case 70000:
+        case 100000:
           creditAmount = 750;
           break;
       }
