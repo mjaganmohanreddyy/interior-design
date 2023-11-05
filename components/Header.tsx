@@ -22,7 +22,7 @@ export default function Header() {
        <Transition.Root show={sidebarOpen} as={Fragment}>
          </Transition.Root>
                  <Menu as="div" className="relative grow">
-                   <Menu.Button className="flex items-center group rounded-md gap-x-3 p-2 w-full top-0 right-0  text-sm font-semibold leading-6 text-foreground hover:bg-gray-200 hover:dark:bg-secondary">
+                   <Menu.Button className="flex items-center group rounded-md gap-x-3 p-2 w-full top-0 right-0  text-sm font-semibold leading-6  text-blue-500 hover:bg-gray-700 hover:dark:bg-secondary">
                      <Image
                        className="h-8 w-8 rounded-full bg-secondary"
                        src={session?.user?.image || ""}
@@ -170,7 +170,7 @@ export default function Header() {
           <button className=" bg-slate-600 text-orange">
           <Link
             href="/dashboard"
-            className="pr-4  py-7 font-bold flex space-x-2 hover:text-blue-400 transition text-black"
+            className="pr-4  py-7 font-bold flex space-x-2 hover:text-blue-400 transition text-blue-500"
           >
             Dashboard
           </Link>
