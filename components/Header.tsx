@@ -170,7 +170,7 @@ export default function Header() {
           <button className=" bg-slate-600 text-orange">
           <Link
             href="/dashboard"
-            className="pr-4  py-7 font-bold flex space-x-2 hover:text-blue-400 transition"
+            className="pr-4  py-7 font-bold flex space-x-2 hover:text-blue-400 transition text-black"
           >
             Dashboard
           </Link>
