@@ -132,7 +132,7 @@ const Home: NextPage = () => {
   }, [router.query.success]);
 
   return (
-    <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen bg-white">
+    <div className="flex mx-auto flex-col items-center justify-center py-2 min-h-screen bg-white">
       <Head>
         <title>interiorai</title>
       </Head>
