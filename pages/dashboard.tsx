@@ -14,7 +14,7 @@ export default function Dashboard({ rooms }: { rooms: Room[] }) {
   const { data: session } = useSession();
 
   return (
-    <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
+    <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen  bg-white">
       <Head>
         <title>interiorai Dashboard</title>
       </Head>
