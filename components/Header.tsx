@@ -62,7 +62,7 @@ export default function Header() {
                              <p className="block px-3 py-1 text-sm leading-6 text-muted-foreground">
                                Help?{" "}
                                <a
-                                 href="mailto:support@papermark.io"
+                                 href="mailto:support@interiorai.online"
                                  className="underline hover:text-muted-foreground/80"
                                >
                                  support@interiorai.online
