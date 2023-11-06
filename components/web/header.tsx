@@ -40,7 +40,7 @@ export default function Header() {
           <div className="flex flex-col space-y-10 mt-4 mb-16">
             <div className="flex sm:space-x-8 sm:flex-row flex-col">
               <div>
-                <h3 className="mb-1 font-medium text-lg">Original Room</h3>
+                <h3 className="mb-1 font-medium text-lg text-black">Original Room</h3>
                 <Image
                   alt="Original photo of a room with roomGPT.io"
                   src="/before1.jpg"
@@ -50,7 +50,7 @@ export default function Header() {
                 />
               </div>
               <div className="sm:mt-0 mt-8">
-                <h3 className="mb-1 font-medium text-lg">Generated Room</h3>
+                <h3 className="mb-1 font-medium text-lg text-black">Generated Room</h3>
                 <Image
                   alt="Generated photo of a room with roomGPT.io"
                   width={400}
