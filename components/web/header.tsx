@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 // import GitHubIcon from "@/components/shared/icons/github";
 
 export default function Header() {
@@ -35,11 +36,33 @@ export default function Header() {
             </div>
           </div>
           <div className="relative md:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0 mt-6   ">
-            <img
-              className="aspect-[3/2] w-full  object-contain lg:absolute lg:inset-0 lg:aspect-auto lg:h-full lg:w-3/4"
-              src="https://decormatters.com/_next/static/images/myEventBanner-0d02fb34476d1e99964ee3af3c5677bb.png"
-              alt=""
-            />
+          <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
+          <div className="flex flex-col space-y-10 mt-4 mb-16">
+            <div className="flex sm:space-x-8 sm:flex-row flex-col">
+              <div>
+                <h3 className="mb-1 font-medium text-lg">Original Room</h3>
+                <Image
+                  alt="Original photo of a room with roomGPT.io"
+                  src="/before1.jpg"
+                  className="w-full object-cover h-96 rounded-2xl"
+                  width={400}
+                  height={400}
+                />
+              </div>
+              <div className="sm:mt-0 mt-8">
+                <h3 className="mb-1 font-medium text-lg">Generated Room</h3>
+                <Image
+                  alt="Generated photo of a room with roomGPT.io"
+                  width={400}
+                  height={400}
+                  src="/after1.jpg"
+                  className="w-full object-cover h-96 rounded-2xl sm:mt-0 mt-2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
           </div>
         </div>
       </div>
