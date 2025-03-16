@@ -1,6 +1,6 @@
 const navigation = {
     product: [
-      { name: "Twitter", href: "https://twitter.com/_rajashekarks" },
+      { name: "Twitter", href: "https://twitter.com" },
       {name:"pricing", href:"https://www.interiorai.online/buy-credits"}
     ],
     // legal: [{ name: "Privacy", href: "/privacy" }],
